@@ -1,0 +1,42 @@
+{
+  "name": "zentao-helper",
+  "version": "0.1.0",
+  "description": "ZenTao REST API v2 MCP server with task-focused tools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/15913581118/zentao-helper.git"
+  },
+  "homepage": "https://github.com/15913581118/zentao-helper#readme",
+  "keywords": [
+    "zentao",
+    "mcp",
+    "model-context-protocol",
+    "issue-tracker"
+  ],
+  "type": "module",
+  "bin": {
+    "zentao-helper": "bin/zentao-helper.js"
+  },
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "spec/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.3",
+    "@modelcontextprotocol/server": "^2.3.1"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
